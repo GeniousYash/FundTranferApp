@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Suisse;
+    src: url(../Fonts/Suisse-Intl.woff2);
+}
+
+.navcon{
+    font-family: Suisse;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #000;
+    box-sizing: border-box;
+    padding: 2px 0;
+    transition: .3s all;
+    position: relative;
+  }
+
+  .nav__link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #3e3e3e;
+    transition: .3s all;
+  }
+
+  .nav__link:hover:after {
+    width: 100%;
+  }
